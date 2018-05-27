@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div class="form-wrap ">
+  <h1>My form</h1>
+  <form class="b-form js-form" action="">
+    <div class="b-input-wrapper">
+      <label for="first_name"
+             class="b-input-wrapper__label b-input-wrapper__label--require">
+        First name
+      </label>
+      <div class="b-form__value js-input-container">
+        <input type="text"
+               id="first_name"
+               name="First_Name"
+               placeholder="Enter your name"
+               data-field-name ="First name"
+               class="js-first-name-input"
+               autocomplete="off">
+        <div class="b-form__error js-error"></div>
+      </div>
+    </div>
+    <div class="b-input-wrapper">
+      <label for="last_name" class="b-input-wrapper__label b-input-wrapper__label--require">
+        Last name
+      </label>
+      <div class="b-form__value js-input-container">
+        <input type="text"
+               id="last_name"
+               name="Last_Name"
+               placeholder="Enter your last name"
+               data-field-name ="Last name"
+               class="js-last-name-input"
+               autocomplete="off">
+        <div class="b-form__error js-error"></div>
+      </div>
+    </div>
+    <div class="b-input-wrapper">
+      <label for="birthday" class="b-input-wrapper__label b-input-wrapper__label--require">
+        Birthday
+      </label>
+      <div class="b-form__value js-input-container">
+        <input type="text"
+               id="birthday"
+               name="Birthday"
+               data-field-name ="Birthday"
+               class="js-datepicker js-birthday-input"
+               autocomplete="off">
+        <div class="b-form__error js-error"></div>
+      </div>
+    </div>
+    <div class="b-input-wrapper widget js-input-container js-fields-container">
+      <fieldset>
+        <legend>Sex</legend>
+        <div>
+          <input type="radio"
+                 id="choice1"
+                 class="js-radio js-radio-check"
+                 name="sex"
+                 value="male">
+          <label for="choice1">Male</label>
+
+          <input type="radio"
+                 id="choice2"
+                 class="js-radio js-radio-check"
+                 name="sex"
+                 value="female">
+          <label for="choice2">Female</label>
+        </div>
+      </fieldset>
+      <div class="b-form__error js-error"></div>
+    </div>
+    <div class="b-input-wrapper">
+      <label for="country" class="b-input-wrapper__label b-input-wrapper__label--require">
+        Country
+      </label>
+      <div class="b-form__value js-input-container">
+
+          <select name="" class="js-country-select" id="country">
+            <option value="" disabled selected>Choose your country</option>
+            <option value="Ukraine">Ukraine</option>
+            <option value="Germany">Germany</option>
+            <option value="USA">USA</option>
+          </select>
+        <div class="b-form__error js-error"></div>
+
+      </div>
+    </div>
+    <div class="b-input-wrapper">
+      <label for="email"  class="b-input-wrapper__label b-input-wrapper__label--require">
+        Email
+      </label>
+      <div class="b-form__value js-input-container">
+        <input type="text"
+               id="email"
+               placeholder="Enter your email"
+               name="Email"
+               data-field-name ="Email"
+               class="js-require-input js-Email"
+               autocomplete="off">
+        <div class="b-form__error js-error"></div>
+      </div>
+    </div>
+    <div class="b-input-wrapper">
+      <label for="password"
+             class="b-input-wrapper__label b-input-wrapper__label--require">
+        Password
+      </label>
+      <div class="b-form__value js-input-container">
+        <input type="text"
+               id="password"
+               type="password"
+               placeholder="Enter your password"
+               name="Password"
+               data-field-name ="Password"
+               class="js-require-input js-Password"
+               autocomplete="off">
+        <div class="b-form__error js-error"></div>
+      </div>
+    </div>
+    <div class="b-input-wrapper">
+      <label for="address" class="b-input-wrapper__label b-input-wrapper__label--require">
+        Address
+      </label>
+      <div class="b-form__value js-input-container">
+        <input type="text"
+               id="address"
+               placeholder="Enter your address"
+               name="Address"
+               data-field-name ="Address"
+               class="js-address"
+               autocomplete="off">
+        <div class="b-form__error js-error"></div>
+      </div>
+    </div>
+
+    <div class="b-input-wrapper js-input-container">
+      <label class="b-input-wrapper__label b-input-wrapper__label--require">
+        Notes
+      </label>
+      <div class="b-form__value ">
+        <textarea class="js-text-area"
+                  data-field-name ="Data"
+                  name="comment"></textarea>
+
+        <div class="b-form__error js-error"></div>
+      </div>
+    </div>
+    <button class="b-form__button ui-button ui-corner-all ui-widget" type="submit">Send</button>
+  </form>
+</div>
+<div class="js-popup b-popup">
+  Success
+</div>
+</body>
+</html>

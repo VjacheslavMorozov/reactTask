@@ -1,0 +1,44 @@
+.b-input-wrapper {
+    padding-bottom: 10px;
+    &__label {
+        width: 100%;
+        padding-bottom: 5px;
+        &--require {
+            &:after {
+                content:"*";
+                display: inline-block;
+                color: red;
+            }
+        }
+    }
+}
+.b-popup {
+    display: none;
+}
+
+.b-form {
+    &__error {
+        padding-top: 5px;
+        color: red;
+    }
+    &__button {
+        width: 100%;
+    }
+}
+.b-input-wrapper {
+    position: relative;
+}
+input {
+    line-height: 20px;
+}
+select {
+    height: 30px;
+}
+input, select, textarea {
+    display: inline-block;
+    width: 100%;
+}
+
+.form-wrap {
+    width: 300px;
+}
